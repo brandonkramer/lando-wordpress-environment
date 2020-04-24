@@ -18,7 +18,7 @@ Before you get started with this setup I assume that you have:
 1. Download WordPress with WP CLI by `lando wp core download` 
 1. Then visit the WordPress folder (`wp-{project}.lndo.site/wordpress/`) and go through install steps
 
-## info
+## Info
 Lando will automatically set up a database with a user and password and also set an environment variables called `lando info` that contains useful information about how your application can access other Lando services.
 ``` 
 database: wordpress
