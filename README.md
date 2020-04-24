@@ -1,6 +1,6 @@
 # Lando WordPress Environment
 This is a WordPress development environment based on Lando which I use for my WordPress projects. It allows for core development, plugin development, and theme development. 
-It is based on [Lando](https://github.com/lando/lando) which is an extremely flexible local development environment that is based on [Docker](https://www.docker.com/).
+[Lando](https://github.com/lando/lando) is an extremely flexible local development environment that is based on [Docker](https://www.docker.com/).
 
 This repository contains the Lando configuration file `.lando.yml` along with `config/php.ini` `config/nginx.conf` `config/httpd.conf` files for server configuration.
 
