@@ -1,0 +1,49 @@
+# Replace all {project} with project name
+name: wp-{project}
+recipe: wordpress
+config:
+  php: '7.4'
+  via: nginx # Nginx or apache
+  webroot: .
+  database: mariadb # Mariadb or mysql
+  xdebug: true
+  config:
+    # https://github.com/lando/lando/blob/master/plugins/lando-services/services/php/php.ini
+    php: config/php.ini
+    # Config/httpd.conf for apache or nginx.conf for nginx
+    # https://github.com/lando/lando/blob/master/plugins/lando-services/services/nginx/nginx.conf.tpl
+    server: config/nginx.conf
+services:
+  node:
+    type: node
+    overrides:
+      # Make port 3000 in node environment available to localhost
+      ports:
+        - 3000:3000
+    globals:
+      gulp-cli: latest
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+  pma:
+    type: phpmyadmin
+    hosts:
+      - database
+tooling:
+  npm:
+    service: node
+  node:
+    service: node
+  gulp:
+    service: node
+  yarn:
+    service: node
+proxy:
+  # Appserver_nginx or appserver for apache
+  appserver_nginx:
+    - wp-{project}.lndo.site
+  mailhog:
+    - mail.wp-{project}.lndo.site
+  pma:
+    - pma.wp-{project}.lndo.site
