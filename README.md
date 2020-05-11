@@ -34,11 +34,13 @@ Go to `pma.wp-{project}.lndo.site` to visit PHPMyAdmin and `mail.wp-{project}.ln
 ## BrowserSync
  Add following options to your Browsersync script:
 ``` 
-browserSync.init(files, {
-  proxy: 'http://appserver', // could be http://appserver.nginx if you're running nginx
-  port: 3000,
-  open: false,
-});
+"browserSyncOptions": {
+    "proxy": "https://wp-{project}.lndo.site",
+    "port": 80,
+    "SSL": true,
+    "open": false,
+    "notify": false
+},
 ```
 
 ## Documentation

@@ -5,7 +5,7 @@ config:
   php: '7.4'
   via: nginx # Nginx or apache
   webroot: .
-  database: mariadb # Mariadb or mysql
+  database: mysql # Mariadb or mysql
   xdebug: true
   config:
     # https://github.com/lando/lando/blob/master/plugins/lando-services/services/php/php.ini

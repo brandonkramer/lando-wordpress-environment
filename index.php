@@ -134,11 +134,13 @@
 		<h2>Browsersync</h2>
 		<p>Add following options to your Browsersync script:</p>
 		<code>
-			#browserSync.init(files, {<BR>
-			proxy: 'http://appserver', // could be http://appserver.nginx if you're running nginx<BR>
-			port: 3000,<BR>
-			open: false,<BR>
-			});
+			"browserSyncOptions": {<BR>
+			"proxy": "https://wp-{project}.lndo.site",<BR>
+			"port": 80,<BR>
+			"SSL": true,<BR>
+			"open": false,<BR>
+			"notify": false<BR>
+			},
 		</code>
 	</section>
 </main>
