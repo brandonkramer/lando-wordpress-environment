@@ -11,8 +11,10 @@ config:
     # https://github.com/lando/lando/blob/master/plugins/lando-services/services/php/php.ini
     php: config/php.ini
     # Config/httpd.conf for apache or nginx.conf for nginx
-    # https://github.com/lando/lando/blob/master/plugins/lando-services/services/nginx/nginx.conf.tpl
+    # https://github.com/lando/lando/blob/master/plugins/lando-services/services/nginx/nginx.conf
     server: config/nginx.conf
+    # Comment out if using apache
+    params: config/params
 services:
   node:
     type: node
