@@ -18,10 +18,6 @@ config:
 services:
   node:
     type: node
-    overrides:
-      # Make port 3000 in node environment available to localhost
-      ports:
-        - 3000:3000
     globals:
       gulp-cli: latest
   mailhog:
