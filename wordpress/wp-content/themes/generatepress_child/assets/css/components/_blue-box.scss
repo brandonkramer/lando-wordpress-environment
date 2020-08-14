@@ -1,0 +1,20 @@
+.blue-box {
+  position: relative;
+  &:after {
+    content: "";
+    width: 90%;
+    height: calc(100% + 12px);
+    position: absolute;
+    right: -7px;
+    top: -6px;
+    background: #EA8C00;
+    z-index: 0;
+    border-radius: 40px;
+  }
+  .tve-content-box-background {
+    background-size: 1046px 239px!important;
+    background: #2B77BD;
+    background-position: center center!important;
+    z-index: 1;
+  }
+}

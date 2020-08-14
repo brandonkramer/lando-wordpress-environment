@@ -1,0 +1,37 @@
+
+.category-author .tve-cb {
+  display: flex;
+  vertical-align: baseline;
+  width: auto;
+  .category-author__avatar {
+    margin: 0 !important;
+    height: 70px;
+    position: relative;
+    top: -9px;
+  }
+  .category-author__label {
+    position: absolute;
+    left: 82px;
+    top: -2px;
+  }
+  .category-author__title {
+    padding-left: 13px;
+    padding-top: 14px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    position: relative;
+    p {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+    &:after {
+      width: 90%;
+      height: 1px;
+      background: white;
+      border-radius: 20px;
+      position: absolute;
+      content: "";
+      bottom: 19px;
+    }
+  }
+}

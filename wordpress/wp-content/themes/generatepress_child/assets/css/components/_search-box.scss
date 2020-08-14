@@ -1,0 +1,27 @@
+.dd-search-box {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 33px;
+    width: 1189px;
+    height: 315px;
+    z-index: 0;
+    background-image: url(../images/elements/newest-post-bg.svg) !important;
+    background-size: cover !important;
+  }
+  .thrv-search-form {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    margin-top: 10px !important;
+    border-radius: 10px;
+    border: 2px solid #2973be !important;
+    padding: 0;
+  }
+  &.dd-search-box--no-bg {
+    &:before {
+      display: none;
+    }
+  }
+}

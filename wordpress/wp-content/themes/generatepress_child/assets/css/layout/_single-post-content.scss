@@ -1,0 +1,264 @@
+.single {
+  .inside-article {
+    .featured-image.page-header-image-single img {
+      border-radius: 30px;
+    }
+    .entry-content {
+      hr {
+        background: url(../images/elements/divider.svg);
+        height: 12px;
+        background-size: cover;
+      }
+
+      img {
+        border-radius: 20px;
+      }
+
+      figure.wp-caption {
+        margin: 10px auto 15px;
+
+        .wp-caption-text {
+          text-align: center;
+          margin-top: 5px;
+          color: #242c38;
+          font-size: 13px;
+          opacity: 0.7;
+        }
+      }
+
+      h2 {
+        margin-top: 35px;
+        font-weight: 700;
+      }
+
+      h3 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+
+      h4 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+
+      p {
+        margin-bottom: 18px;
+        font-size: 16px;
+      }
+
+      > ul:not([class]),
+      > ul:not([class]) ul {
+        margin-top: -10px;
+        margin-bottom: 30px;
+        padding-left: 0;
+        margin-left: 0;
+        list-style: none;
+
+        > li:not([style]) {
+          padding-left: 0;
+          margin-left: 0;
+
+          &:not([style]) {
+            position: relative;
+            &:before {
+              height: 17px;
+              width: 18px;
+              content: "";
+              background: url(../images/icons/blue-handpaw.svg);
+              border: 0;
+              margin-right: 6px;
+              position: relative;
+              bottom: -3px;
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      .dhn {
+        position: relative;
+        min-height: 55px;
+        margin-left: -5px;
+        margin-bottom: 10px;
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        padding-left: 60px;
+
+        > span {
+          background: #2973be;
+          color: #ffffff;
+          width: 43px;
+          height: 43px;
+          border-radius: 50%;
+          text-align: center;
+          font-size: 26px;
+          font-weight: 600;
+          line-height: 41px;
+          padding-left: 3px;
+          display: inline-block;
+          padding-top: 0;
+          margin-right: 7px;
+          position: absolute;
+          left: -3px;
+          top: 7px;
+        }
+      }
+
+      iframe.instagram-media.instagram-media-rendered {
+        max-width: 480px !important;
+        margin: 0 auto !important;
+        border-radius: 20px !important;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5) !important;
+        margin: 30px auto !important;
+        border: 0 solid white !important;
+      }
+
+      .dd-instagram-container {
+        background: #f9f9f9;
+        padding: 1px;
+        border-radius: 30px;
+      }
+
+      div#chewy-content-box-full-width {
+        width: 100%;
+        border-radius: 15px !important;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.20) !important;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .su-box.su-box-style-default {
+        border-radius: 15px!important;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.20) !important;
+      }
+      .su-box.su-box-style-default.final-verdict {
+        border-radius: 15px !important;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.20) !important;
+        max-width: 740px;
+        margin: 0 auto;
+      }
+
+      .su-youtube.su-u-responsive-media-yes {
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.20) !important;
+      }
+
+      div#chewy-content-box-full-width .su-box-title {
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+
+      a.su-button.su-button-style-default {
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid rgb(111, 71, 12);
+        --tve-applied-border: 1px solid rgb(111, 71, 12);
+        box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 5px 0px;
+        --tve-applied-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.15);
+        background-color: #ff6600 !important;
+        background-size: auto !important;
+        background-position: 50% 50% !important;
+        background-attachment: scroll !important;
+        background-repeat: no-repeat !important;
+
+        span {
+          text-transform: uppercase;
+          font-size: 16px !important;
+          font-weight: bold;
+
+          &:after {
+            content: "";
+            display: inline-block;
+            background-size: cover !important;
+            position: relative;
+            width: 39px;
+            height: 23px;
+            background: url(../images/elements/button-angle.svg);
+            margin-bottom: -5px;
+            margin-left: 13px;
+            margin-right: -13px;
+          }
+        }
+      }
+
+      .tablepress {
+        a.su-button.su-button-style-default {
+          span {
+            padding: 0 8px !important;
+
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .single {
+    .inside-article {
+      .entry-content {
+        a.su-button.su-button-style-default {
+          padding: 5px !important;
+
+          span {
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 560px) {
+  .single h1.entry-title {
+    font-size: 26px!important;
+  }
+  .single .inside-article .entry-content h2 {
+    font-size: 23px!important;
+  }
+  .single .inside-article .entry-content h3 {
+    font-size: 19px!important;
+  }
+  .single .inside-article .entry-content .dhn > span {
+    width: 34px;
+    height: 34px;
+    font-size: 19px;
+    line-height: 33px;
+    position: absolute;
+    left: -3px;
+    top: 0;
+  }
+  .single .inside-article .entry-content .dhn {
+    min-height: 35px;
+    padding-left: 43px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .single {
+    .inside-article {
+      .entry-content {
+        iframe.instagram-media.instagram-media-rendered {
+          border-radius: 20px !important;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+        }
+        .dd-instagram-container {
+          background: transparent;
+          padding: 0;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}

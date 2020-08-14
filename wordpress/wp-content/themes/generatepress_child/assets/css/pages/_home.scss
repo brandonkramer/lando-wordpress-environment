@@ -1,0 +1,247 @@
+.home-hero {
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  .tve-page-section-out:first-child {
+    background-position: 50% 10%!important;
+  }
+  &__content-box {
+
+  }
+  &:after {
+    content: "";
+    width: 100%;
+    height: 150px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    opacity: 0.7;
+  }
+}
+
+.home-as-seen-on {
+  .tcb-flex-col .tcb-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      max-width: 110px;
+      margin: 0 auto;
+    }
+    h2 {
+      margin: 0;
+    }
+  }
+  &:before {
+    content: "";
+    display: inline-block;
+    background-size: cover !important;
+    position: absolute;
+    width: 122px;
+    height: 55px;
+    background: url(../images/elements/as-seen-on-left-icons.svg);
+    left: -37px;
+    top: 30px;
+  }
+  &:after {
+    content: "";
+    display: inline-block;
+    background-size: cover !important;
+    position: absolute;
+    width: 104px;
+    height: 83px;
+    background: url(../images/elements/as-seen-on-right-icons.svg);
+    right: -48px;
+    top: 30px;
+  }
+}
+
+
+.home-hero__content-box__cats {
+  margin-top: 4px!important;
+  margin-left: -19px;
+  .tcb-flex-row {
+    padding-top: 0;
+    display: flex;
+    flex-wrap: nowrap!important;
+    &:not(.tcb--cols--2):not(.tcb-medium-no-wrap) {
+      .tcb-flex-col {
+        max-width: 19.95%!important;
+      }
+    }
+    .tcb-col {
+      transition: all 0.3s ease;
+      opacity: 1;
+      &:hover {
+        opacity: 0.6;
+      }
+      .thrv_text_element {
+        p {
+          margin: 0;
+          text-align: center;
+          margin-top: 3px;
+          line-height: 13px;
+          strong {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1800px) {
+  .thrv_wrapper.thrv-page-section.tcb-window-width.home-hero[data-css="tve-u-16f0f5c4ad1"] {
+    padding-top: 130px!important;
+  }
+
+  .thrv_wrapper.thrv-page-section.tcb-window-width.home-hero[data-css="tve-u-16f0f5c4ad1"] .tve-page-section-out {
+    background-position: 50% 15%!important;
+  }
+}
+
+@media (max-width: 1023px) {
+ .home-as-seen-on {
+   .tcb-flex-row:not(.tcb--cols--2):not(.tcb-medium-no-wrap) {
+     >.tcb-flex-col {
+       max-width: 16% !important;
+       &:first-child {
+         max-width: 100% !important;
+         -webkit-flex: 1 0 100%;
+         -ms-flex: 1 0 250px;
+         flex: 1 0 100%;
+       }
+     }
+   }
+ }
+}
+@media (max-width: 840px) {
+  .home-as-seen-on {
+    .tcb-flex-row:not(.tcb--cols--2):not(.tcb-medium-no-wrap) {
+      justify-content: center;
+      >.tcb-flex-col {
+        max-width: 33% !important;
+        &:first-child {
+          max-width: 100% !important;
+          -webkit-flex: 1 0 100%;
+          -ms-flex: 1 0 250px;
+          flex: 1 0 100%;
+        }
+      }
+    }
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
+  .home-hero:after {
+    height: 300px;
+  }
+
+}
+@media (max-width: 767px) {
+  .thrv_wrapper.thrv-page-section.tcb-window-width.home-hero .tve-page-section-out {
+    background-position: 90% 10%!important;
+  }
+  .thrv_wrapper.thrv_contentbox_shortcode.thrv-content-box.tve-elem-default-pad.home-as-seen-on {
+    margin-top: -7px!important;
+    padding-top: 0!important;
+  }
+  .home-hero__content-box {
+    margin-top: 220px!important;
+    width: 100%;
+    max-width: 100%!important;
+  }
+  .home-hero__content-box__cats {
+    transform: scale(0.8);
+    margin-left: -60px;
+    margin-right: -60px;
+  }
+  .home-hero__content-box .thrv_wrapper.thrv_text_element:not(#tve) h1[data-css="tve-u-173b29b03cb"] {
+    font-size: 29px!important;
+  }
+  body.home {
+     [data-css="tve-u-16f0f5c4ad2"] {
+      box-shadow: none!important;
+      border: 0!important;
+      background: transparent!important;
+      color: white!important;
+      padding: 0!important;
+    }
+
+    .home-hero__content-box[data-css=tve-u-16f0f5c4ad3] {
+      padding: 0!important;
+      margin-bottom: -10px;
+    }
+
+    .home-hero__content-box[data-css=tve-u-16f0f5c4ad3] h1, .home-hero__content-box[data-css=tve-u-16f0f5c4ad3] p {
+      color: white;
+      text-align: center!important;
+    }
+
+    .home-hero__content-box[data-css=tve-u-16f0f5c4ad3] [data-css="tve-u-16f0f5c4acd"] {
+      max-width: 100%!important;
+      width: 100%!important;
+    }
+
+    .thrv_wrapper.thrv_contentbox_shortcode.thrv-content-box.tve-elem-default-pad.home-as-seen-on {
+      background: #2973be;
+      margin-left: -40px;
+      margin-right: -40px;
+      margin-bottom: -20px;
+      position: absolute;
+      bottom: -190px;
+      box-shadow: 0 -200px 200px rgba(0, 0, 0, 0.9);
+      height: 190px;
+      padding: 0 30px!important;
+    }
+
+    .thrv_wrapper.thrv-page-section.tcb-window-width.home-hero {
+      margin-bottom: 180px!important;
+      overflow: visible;
+    }
+
+    .thrv_wrapper.thrv_contentbox_shortcode.thrv-content-box.tve-elem-default-pad.home-as-seen-on .thrv_wrapper.tve_image_caption {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .home-as-seen-on {
+    .tcb-flex-row:not(.tcb--cols--2):not(.tcb-medium-no-wrap) {
+      justify-content: center;
+      >.tcb-flex-col {
+        max-width: 33% !important;
+        &:first-child {
+          max-width: 100% !important;
+          -webkit-flex: 1 0 100%;
+          -ms-flex: 1 0 250px;
+          flex: 1 0 100%;
+        }
+        img {
+          max-width: 80%;
+        }
+      }
+    }
+  }
+  .home-hero__content-box[data-css="tve-u-16f0f5c4ad3"] {
+    padding: 0;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+    padding-top: 20px!important;
+  }
+  .home-hero__content-box [data-css="tve-u-16f0f5c4acd"] {
+    width: 100%!important;
+    max-width: 100%!important;
+  }
+}

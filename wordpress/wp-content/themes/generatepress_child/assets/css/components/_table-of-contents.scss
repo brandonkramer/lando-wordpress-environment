@@ -1,0 +1,41 @@
+.dd-post-toc {
+  margin: 30px;
+  div#toc_container {
+    float: none;
+    background: transparent;
+    border: 0;
+    p.toc_title {
+      font-size: 24px;
+      text-align: left;
+      span.toc_toggle {
+        font-size: 18px!important;
+        color: #9B9B9B;
+        margin-left: 10px;
+        a {
+          color: #9B9B9B;
+          &:hover {
+            color: #2873BE;
+          }
+        }
+      }
+    }
+    ul.toc_list {
+      a {
+        margin-bottom: 0.5em;
+        display: block;
+        &:before {
+          height: 17px;
+          width: 18px;
+          content: "";
+          background: url(../images/icons/blue-handpaw.svg);
+          border: 0;
+          margin-right: 6px;
+          position: relative;
+          bottom: -3px;
+          display: inline-block;
+        }
+      }
+
+    }
+  }
+}

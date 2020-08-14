@@ -1,0 +1,206 @@
+.dd-equipment-posts {
+  > .tve-page-section-out {
+    background-size: 1259px 1286px !important;
+    background: #3784d1;
+  }
+
+  .thrv_wrapper.thrv_text_element.tve-froala {
+    &:last-child {
+      padding-bottom: 15px !important;
+    }
+  }
+
+  h3 {
+    margin-top: 12px;
+  }
+
+  .thrv_text_element.tve-froala p:not(#tve) {
+    text-align: center;
+
+    > a.tve-froala {
+      color: #424242 !important;
+      background: transparent !important;
+      text-align: center !important;
+      display: inline-block;
+      font-size: 16px;
+      text-decoration: none !important;
+      position: relative;
+      opacity: 1;
+      transition: all 0.3s ease;
+
+      &:after {
+        height: 1px;
+        content: "";
+        width: 100%;
+        background: #5f5f5f;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        opacity: 0.4;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .grooming h3:before {
+    content: "";
+    display: inline-block;
+    background-size: cover !important;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icons/equipment-grooming.svg);
+    margin-right: 6px;
+    bottom: -10px;
+    margin-left: -12px;
+  }
+
+  .accessories h3:before {
+    content: "";
+    display: inline-block;
+    background-size: cover !important;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icons/equipment-accessories.svg);
+    margin-right: 6px;
+    bottom: -10px;
+    margin-left: -12px;
+  }
+
+  .health h3:before {
+    content: "";
+    display: inline-block;
+    background-size: cover !important;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icons/equipment-health.svg);
+    margin-right: 6px;
+    bottom: -10px;
+    margin-left: -12px;
+  }
+
+  .dog-food h3:before {
+    content: "";
+    display: inline-block;
+    background-size: cover !important;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icons/equipment-dog-food.svg);
+    margin-right: 6px;
+    bottom: -10px;
+    margin-left: -12px;
+  }
+
+  .clothing h3:before {
+    content: "";
+    display: inline-block;
+    background-size: cover !important;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icons/equipment-clothing.svg);
+    margin-right: 6px;
+    bottom: -10px;
+    margin-left: -12px;
+  }
+
+  .collars h3:before {
+    content: "";
+    display: inline-block;
+    background-size: cover !important;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icons/equipment-collars.svg);
+    margin-right: 6px;
+    bottom: -10px;
+    margin-left: -12px;
+  }
+
+  .dog-crates h3:before {
+    content: "";
+    display: inline-block;
+    background-size: cover !important;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icons/equipment-dog-crates.svg);
+    margin-right: 6px;
+    bottom: -10px;
+    margin-left: -12px;
+  }
+
+  .beds-mats h3:before {
+    content: "";
+    display: inline-block;
+    background-size: cover !important;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icons/equipment-beds-mats.svg);
+    margin-right: 6px;
+    bottom: -10px;
+    margin-left: -12px;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+  .thrv_wrapper.thrv-page-section.tcb-window-width.dd-equipment-posts {
+    .thrv_wrapper.thrv-columns .tcb-flex-row.tcb--cols--4 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .thrv_wrapper.thrv-columns .tcb-flex-row.tcb--cols--4 .tcb-flex-col {
+      width: 50%;
+    }
+
+    .thrv_text_element.tve-froala p:not(#tve) > a.tve-froala {
+      font-size: 13px;
+      letter-spacing: -0.9px;
+    }
+
+
+    .thrv_wrapper.thrv-columns .tcb-flex-row.tcb--cols--4 .tcb-flex-col :not(#tve) h3[data-css] {
+      font-size: 17px !important;
+    }
+
+
+    .thrv_wrapper.thrv-columns .tcb-flex-row.tcb--cols--4 .tcb-flex-col :not(#tve) h3[data-css]:before {
+      width: 20px;
+      height: 20px;
+      top: 4px;
+    }
+
+    .thrv_wrapper > .tcb-flex-row:not(.v-2) > .tcb-flex-col {
+      padding-left: 12px;
+    }
+
+    .thrv_text_element.tve-froala p:not(#tve) {
+      margin-bottom: 0px !important;
+      padding-bottom: 0 !important;
+    }
+
+    .thrv_wrapper.thrv-columns .tcb-flex-row.tcb--cols--4 .tcb-flex-col .thrv_wrapper.tve-elem-default-pad {
+      padding: 0;
+    }
+
+
+    div > .thrv_wrapper.thrv-columns {
+      transform: scale(0.95);
+      margin-top: -30px !important;
+      margin-left: -11px;
+      margin-right: -11px;
+      margin-bottom: -25px;
+    }
+  }
+}

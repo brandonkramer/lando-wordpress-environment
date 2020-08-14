@@ -1,9 +1,9 @@
-# Replace all {project} with project name
-name: wp-{project}
+# Replace all doggiedesigner with project name
+name: wp-doggiedesigner
 recipe: wordpress
 config:
   php: '7.4'
-  via: nginx # Nginx or apache
+  via: apache # Nginx or apache
   webroot: .
   database: mysql # Mariadb or mysql
   xdebug: true
@@ -39,9 +39,9 @@ tooling:
     service: node
 proxy:
   # Appserver_nginx or appserver for apache
-  appserver_nginx:
-    - wp-{project}.lndo.site
+  appserver:
+    - wp-doggiedesigner.lndo.site
   mailhog:
-    - mail.wp-{project}.lndo.site
+    - mail.wp-doggiedesigner.lndo.site
   pma:
-    - pma.wp-{project}.lndo.site
+    - pma.wp-doggiedesigner.lndo.site
