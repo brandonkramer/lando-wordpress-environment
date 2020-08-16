@@ -1,5 +1,5 @@
-# Replace all doggiedesigner with project name
-name: wp-doggiedesigner
+# Replace all project with project name
+name: wp-project
 recipe: wordpress
 config:
   php: '7.4'
@@ -40,8 +40,8 @@ tooling:
 proxy:
   # Appserver_nginx or appserver for apache
   appserver:
-    - wp-doggiedesigner.lndo.site
+    - wp-project.lndo.site
   mailhog:
-    - mail.wp-doggiedesigner.lndo.site
+    - mail.wp-project.lndo.site
   pma:
-    - pma.wp-doggiedesigner.lndo.site
+    - pma.wp-project.lndo.site
