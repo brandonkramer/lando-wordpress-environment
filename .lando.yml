@@ -3,6 +3,7 @@ name: wp-project
 recipe: wordpress
 config:
   php: '7.4'
+  composer_version: '2' # set to 1 | 1-latest | 2 | 2-latest https://docs.lando.dev/config/php.html#installing-composer
   via: apache # Nginx or apache
   webroot: .
   database: mysql # Mariadb or mysql
@@ -37,6 +38,8 @@ tooling:
     service: node
   yarn:
     service: node
+  php:
+    service: appserver
 proxy:
   # Appserver_nginx or appserver for apache
   appserver:
